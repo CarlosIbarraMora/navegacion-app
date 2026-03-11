@@ -1,15 +1,15 @@
-import React from "react";
+import React, { useState } from 'react';
 import {
     View,
     Text,
     TextInput,
     TouchableOpacity,
-    Stylesheet,
+    StyleSheet,
     Alert,
 } from 'react-native';
 
 export default function LoginScreen({navigation}){
-    const [usuario,setUsuario] = useState('');
+    const [usuario, setUsuario] = useState('');
     const [password, setPassword] = useState('');
 
     const manejarLogin = () => {
